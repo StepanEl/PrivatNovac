@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-primary: #2957A4;
+  --background-secondary: #CD9C54;
+  --text-on-primary: #ffffff;   
+  --text-on-secondary: #112951; 
+}
+
+.element-na-primary {
+  background: var(--background-primary);
+  color: var(--text-on-primary);
+}
+
+.element-na-secondary {
+  background: var(--background-secondary);
+  color: var(--text-on-secondary);
+}
+
+html {
+  font-family: 'Alegreya Sans', Arial, sans-serif;
+}
+
+.container {
+  max-width: 26rem;
+  margin-right: auto;
+  margin-left: auto;
+}

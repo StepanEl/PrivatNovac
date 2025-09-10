@@ -1,0 +1,75 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #2957A4;
+    width: 100%;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 6px;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #FFEB11;
+    text-shadow:
+        -1px -1px 0 #163363,
+        1px -1px 0 #163363,
+        -1px 1px 0 #163363,
+        1px 1px 0 #163363;
+
+}
+
+.hero img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-title {
+  position: absolute;
+  bottom: -1rem; /* vyjede z obrázku o 1rem dolů */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+  color: #FFEB11;
+  padding: 0.5rem 1rem;
+  text-shadow:
+    -1px -1px 0 #163363,
+     1px -1px 0 #163363,
+    -1px  1px 0 #163363,
+     1px  1px 0 #163363;
+}
