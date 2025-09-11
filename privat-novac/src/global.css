@@ -6,7 +6,7 @@
 
 :root {
   --background-primary: #2957A4;
-  --background-secondary: #CD9C54;
+  --background-secondary: rgba(205, 156, 84, 0.47);
   --text-on-primary: #ffffff;   
   --text-on-secondary: #112951; 
 }
@@ -19,6 +19,7 @@
 .element-na-secondary {
   background: var(--background-secondary);
   color: var(--text-on-secondary);
+  padding: 1rem 1.5rem
 }
 
 html {

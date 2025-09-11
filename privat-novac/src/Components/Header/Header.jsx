@@ -14,9 +14,9 @@ export const Header = () => {
                     </button>
                 </nav>
             </div>
-            <div class="hero">
+            <div className="hero">
                 <img src={novac} alt="Obrázek města" />
-                <h1 class="hero-title">Privát Nováč</h1>
+                <h1 className="hero-title">Privát Nováč</h1>
             </div>
         </header>
     );
