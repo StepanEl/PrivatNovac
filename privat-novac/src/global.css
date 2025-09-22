@@ -8,13 +8,14 @@
 :root {
   --background-primary: #2957A4;
   --background-secondary: rgba(205, 156, 84, 0.47);
-  --text-on-primary: #ffffff;   
-  --text-on-secondary: #112951; 
+  --text-on-primary: #ffffff;
+  --text-on-secondary: #112951;
 }
 
 .element-na-primary {
   background: var(--background-primary);
   color: var(--text-on-primary);
+  padding: 1rem 1.5rem
 }
 
 .element-na-secondary {

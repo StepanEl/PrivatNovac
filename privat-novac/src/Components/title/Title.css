@@ -5,10 +5,16 @@
 
 .title-container {
     border: 12px solid transparent;
-    border-image: url('../../img/frame.svg')15 round;
     padding: 0rem;
     margin: 0rem;
     display: block;
     text-align: center;
+}
 
+.frame-blue {
+    border-image: url('../../img/frame.svg')15 round;
+}
+
+.frame-white {
+    border-image: url('../../img/frame-white.svg')15 round;
 }
