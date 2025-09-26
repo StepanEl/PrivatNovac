@@ -48,7 +48,7 @@ const rooms = [
     }
 ];
 
-export const RoomsSection = () => {
+export function RoomsSection () {
     const [active, setActive] = useState(0);
 
     return (

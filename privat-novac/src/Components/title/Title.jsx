@@ -1,6 +1,6 @@
 import './Title.css';
 
-export const Title = ({ children, variant }) => {
+export function Title ({ children, variant }) {
     const frameClass =
         variant === 'primary'
             ? 'frame-white'

@@ -1,6 +1,6 @@
 import './Button.css';
 
-export const Button = ({ text, className }) => {
+export function Button ({ text, className }) {
     return (
         <div className='btn-container'>
             <button className={`btn ${className}`} >

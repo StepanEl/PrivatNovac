@@ -1,4 +1,5 @@
 import { Button } from '../../Components/Button/Button';
+import { Footer } from '../../Components/Footer/Footer';
 import { Gallery } from '../../Components/Gallery/Gallery';
 import { Header } from '../../Components/Header/Header';
 import { PriceForm } from '../../Components/PriceForm/PriceForm';
@@ -8,10 +9,11 @@ import map from '../../img/map.jpg';
 import photomap from '../../img/photomap.jpg';
 import './style.css';
 
-export const HomePage = () => {
+export function HomePage () {
   return (
     <div className="container">
       <Header />
+
       <main>
         <div className="element-na-secondary">
           <Title variant="secondary"> Náš penzion vás srdečně zve<br />
@@ -55,32 +57,9 @@ export const HomePage = () => {
           <img src={map} alt="mapa" className="map-image" />
         </div>
       </main>
-      <footer>
-        <div className="element-na-primary">
-          <Title variant="primary">
-            <h2 className='small-title'>Kontakt</h2>
-          </Title>
-          <div className='contact-info'>
-            <p>Tel.: +420 491 470 085</p>
-            <p>Mobil: +420 739 292 523</p>
-            <p>
-              E-mail: <a href="mailto:hugo.habrman@gmail.com">hugo.habrman@gmail.com</a>
-            </p>
-          </div>
-          <div className='adress-info'>
-            <p className='text-underline'>Fakturační adresa:</p>
-            <p>Eva Habrmanová</p>
-            <p>Havlíčkova 190</p>
-            <p>549 01 Nové Město nad Metují</p>
-          </div>
-          <div className='adress-info'>
-            <p>Nejsem plátce DPH</p>
-            <p>IČO: 60895284</p>
-          </div>
-        </div>
 
-        <p> © 2025 Eliška Štěpánová. Všechna práva vyhrazena.</p>
-      </footer>
+      <Footer />
+
     </div>
   );
 };

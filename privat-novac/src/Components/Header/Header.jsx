@@ -1,7 +1,7 @@
 import './Header.css';
 import novac from '../../img/novac2.png';
 
-export const Header = () => {
+export function Header () {
     return (
         <header>
             <div className="navigation" >
