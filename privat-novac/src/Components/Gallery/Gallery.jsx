@@ -14,26 +14,35 @@ export const Gallery = ({ slides }) => (
     {slides.map((slide, idx) => (
       <SwiperSlide key={idx}>
         <div style={{ position: 'relative' }}>
-    <img src={slide.image} alt="" style={{ width: '100%', display: 'block' }} />
-    {slide.text && (
-      <div style={{ textAlign: 'center', marginBlock: '2rem', position: 'relative' }}>
-        {slide.text}
-        {slide.icon && (
           <img
-            src={slide.icon}
-            alt=""
-            style={{
-              position: 'absolute',
-              right: '20px',
-              bottom: '-30px',
-              width: '32px',
-              height: '32px'
-            }}
+            src={`${import.meta.env.BASE_URL}${slide.image}`}
+            alt={slide.text || ''}
+            style={{ width: '100%', display: 'block' }}
           />
-        )}
-      </div>
-    )}
-  </div>
+          {slide.text && (
+            <div
+              style={{
+                textAlign: 'center',
+                marginBlock: '2rem',
+                position: 'relative'
+              }}>
+              {slide.text}
+              {slide.icon && (
+                <img
+                  src={`${import.meta.env.BASE_URL}${slide.icon}`}
+                  alt=""
+                  style={{
+                    position: 'absolute',
+                    right: '20px',
+                    bottom: '-30px',
+                    width: '32px',
+                    height: '32px'
+                  }}
+                />
+              )}
+            </div>
+          )}
+        </div>
       </SwiperSlide>
     ))}
   </Swiper>
