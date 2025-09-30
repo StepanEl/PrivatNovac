@@ -9,7 +9,7 @@ import map from '../../img/map.jpg';
 import photomap from '../../img/photomap.jpg';
 import './style.css';
 
-export function HomePage () {
+export function HomePage() {
   return (
     <div className="container">
       <Header />
@@ -28,9 +28,9 @@ export function HomePage () {
           { image: 'img/info/4.jpg', text: 'Na zahradě si můžete dopřát odpočinek u bazénu s lehátky, posedět v dřevěném altánu nebo si vychutnat grilování u venkovního krbu.', icon: 'img/icons/swimming.svg' },
           { image: 'img/info/5.jpg', text: 'Po dohodě si můžete večer užít jedinečný zážitek - promítání filmů majitele ubytování, režiséra Hugo Habrmana v útulném domácím letním kině.', icon: 'img/icons/video-camera.svg' }
         ]} />
-
-        <RoomsSection />
-
+        <div id='RoomsSection'>
+          <RoomsSection />
+        </div>
         <div className="element-na-secondary">
           <Title variant="secondary">
             <h2 className='small-title'>Tipy na výlety</h2>
@@ -44,13 +44,15 @@ export function HomePage () {
           <PriceForm />
         </div>
 
-        <div className="element-na-secondary">
+        <div id='arrival' className="element-na-secondary">
           <Title variant="secondary">
             <h2 className='small-title'>Kudy k nám</h2>
           </Title>
-          <p>V Zátiší</p>
-          <p>549 01 Nové Město nad Metují</p>
-          <p>GPS: 50.327785, 16.164823</p>
+          <div className='arrival-address'>
+            <p>V Zátiší<br/>
+            549 01 Nové Město nad Metují<br/>
+            GPS: 50.327785, 16.164823</p>
+          </div>
         </div>
         <div>
           <img src={photomap} alt="foto mapa" className="map-image" />

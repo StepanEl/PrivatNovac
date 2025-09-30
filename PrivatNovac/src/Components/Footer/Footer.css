@@ -18,11 +18,6 @@
   text-decoration: underline;
 }
 
-.contact-info p,
-.adress-info p {
-  line-height: 0.5;
-}
-
 .footer-copyright {
   position: absolute;
   bottom: -0.5rem;
