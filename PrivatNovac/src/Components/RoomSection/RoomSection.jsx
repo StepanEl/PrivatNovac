@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Gallery } from '../../Components/Gallery/Gallery';
 import { Button } from '../Button/Button';
+import { Link } from 'react-router';
 
 const rooms = [
     {
@@ -48,7 +49,7 @@ const rooms = [
     }
 ];
 
-export function RoomsSection () {
+export function RoomsSection() {
     const [active, setActive] = useState(0);
 
     return (
@@ -81,12 +82,12 @@ export function RoomsSection () {
                 </div>
                 <Gallery slides={rooms[active].gallery} />
             </div>
-            <Button text={
+            <Link to='/vybaveni-a-pravidla'><Button text={
                 <>
                     Vybavení<br />
                     a pravidla ubytování
                 </>
-            } />
+            } /> </Link>
         </div>
     );
 };

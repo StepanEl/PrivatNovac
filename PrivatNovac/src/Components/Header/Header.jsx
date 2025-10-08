@@ -4,13 +4,14 @@ import novac1 from '../../img/novac1.png';
 import { Link } from 'react-router';
 
 import { useState } from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 export function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <header>
             <div className="navigation" >
-                <Link to="/">
+                <Link to="/" className="logo-link">
                     <h1 onClick={() => setMenuOpen(false)}>Privát Nováč</h1>
                 </Link>
                 <nav>
@@ -34,11 +35,11 @@ export function Header() {
                     <div className="menu-content">
                         <img src={novac1} alt="Obrázek města" className="menu-img" />
                         <nav className="menu-nav">
-                            <a href="#RoomsSection" onClick={() => setMenuOpen(false)}>Pokoje</a>
+                            <HashLink smooth to="/#RoomsSection" onClick={() => setMenuOpen(false)}>Pokoje</HashLink>
                             <Link to='/vybaveni-a-pravidla'> Vybavení a pravidla ubytování</Link>
                             <a href="#">Tipy na výlety</a>
                             <a href="#">Ceník</a>
-                            <a href="#arrival" onClick={() => setMenuOpen(false)}>Kudy k nám</a>
+                            <HashLink smooth to="/#arrival" onClick={() => setMenuOpen(false)}>Kudy k nám</HashLink>
                             <a href="#contact" onClick={() => setMenuOpen(false)}>Kontakt</a>
                         </nav>
                         <div className="menu-contact">

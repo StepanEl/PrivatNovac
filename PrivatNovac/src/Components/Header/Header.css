@@ -7,6 +7,14 @@
   width: 100%;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+.logo-link:visited {
+  color: inherit;
+}
+
 .hamburger {
   display: flex;
   flex-direction: column;
