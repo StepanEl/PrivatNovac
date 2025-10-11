@@ -1,0 +1,39 @@
+.price-table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    margin: 2rem auto;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.price-table th {
+    padding: 12px;
+    background: var(--background-primary);
+    color: var(--text-on-primary);
+    font-weight: normal;
+}
+
+.price-table th,
+.price-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.price-table th:last-child,
+.price-table td:last-child {
+  border-right: none;
+}
+
+.price-table td:first-child {
+    background: var(--background-primary);
+    color: var(--text-on-primary);
+    padding-left: 16px;
+}
+
+.childrenBed {
+text-align: center;   
+}

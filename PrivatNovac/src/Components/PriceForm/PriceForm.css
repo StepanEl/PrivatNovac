@@ -16,3 +16,14 @@
     border: 1px solid #ccc;
     width: 7rem;
 }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+  display: inline;
+}
+
+input[type=number] {
+  -moz-appearance: textfield; /* pro Firefox */
+
+}

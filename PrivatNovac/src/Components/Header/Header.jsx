@@ -38,15 +38,14 @@ export function Header() {
                             <HashLink smooth to="/#RoomsSection" onClick={() => setMenuOpen(false)}>Pokoje</HashLink>
                             <Link to='/vybaveni-a-pravidla'> Vybavení a pravidla ubytování</Link>
                             <a href="#">Tipy na výlety</a>
-                            <a href="#">Ceník</a>
+                             <Link to='/cenik'>Ceník</Link>
                             <HashLink smooth to="/#arrival" onClick={() => setMenuOpen(false)}>Kudy k nám</HashLink>
                             <a href="#contact" onClick={() => setMenuOpen(false)}>Kontakt</a>
                         </nav>
                         <div className="menu-contact">
-                            <p>+420 491 470 085<br />
-                                +420 739 292 523<br />
-                                hugo.habrman@gmail.com<br />
-                                V Zátiší, 549 01 Nové Město nad Metují</p>
+                            <p>V Zátiší, 549 01 Nové Město nad Metují<br />
+                            hugo.habrman@gmail.com<br />
+                            +420 491 470 085, +420 739 292 523</p>
                         </div>
                     </div>
                 </div>

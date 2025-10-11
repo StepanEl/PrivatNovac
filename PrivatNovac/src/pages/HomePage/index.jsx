@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { Button } from '../../Components/Button/Button';
 import { Footer } from '../../Components/Footer/Footer';
 import { Gallery } from '../../Components/Gallery/Gallery';
@@ -42,6 +43,10 @@ export function HomePage() {
         <div className="element-na-primary price-container">
           <h2 className='small-title'>Cena za ubytování</h2>
           <PriceForm />
+                <p>Dítě ve vlastní postýlce zdarma</p>
+
+          <Link to='/cenik'><Button text="Ceník a storno podmínky" className="explore-btn" /></Link>
+
         </div>
 
         <div id='arrival' className="element-na-secondary">
@@ -49,9 +54,9 @@ export function HomePage() {
             <h2 className='small-title'>Kudy k nám</h2>
           </Title>
           <div className='arrival-address'>
-            <p>V Zátiší<br/>
-            549 01 Nové Město nad Metují<br/>
-            GPS: 50.327785, 16.164823</p>
+            <p>V Zátiší<br />
+              549 01 Nové Město nad Metují<br />
+              GPS: 50.327785, 16.164823</p>
           </div>
         </div>
         <div>
