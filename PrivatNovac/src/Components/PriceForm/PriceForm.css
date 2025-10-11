@@ -24,6 +24,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 input[type=number] {
-  -moz-appearance: textfield; /* pro Firefox */
-
+  appearance: number-input;
+  -moz-appearance: number-input;
 }
