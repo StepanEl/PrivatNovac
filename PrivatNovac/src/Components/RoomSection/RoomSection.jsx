@@ -68,6 +68,7 @@ export function RoomsSection() {
                             cursor: 'pointer',
                             fontSize: '1.1rem',
                             fontFamily: 'Andika New Basic, Arial, sans-serif',
+                            flexGrow: 1,
                         }}
                     >
                         {room.name}

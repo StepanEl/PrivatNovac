@@ -7,15 +7,15 @@
   width: 100%;
   position: fixed;
   z-index: 1000;
-    top: 0;
-
-  max-width: 26rem;
+  top: 0;
+  max-width: 100%;
 }
 
 .logo-link {
   text-decoration: none;
   color: inherit;
 }
+
 .logo-link:visited {
   color: inherit;
 }
@@ -44,19 +44,19 @@
 .menu-overlay {
   position: fixed;
   top: 2.7rem;
-  width: 26rem;
+  width: 100%;
   background: #2957A4;
   z-index: 100;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   animation: fadeIn 0.3s;
-  color:#fff
+  color: #fff
 }
 
 
 .menu-img {
-  width: 26rem;
+  width: 100%;
 }
 
 .menu-nav {
@@ -104,7 +104,6 @@ h1 {
     1px -1px 0 #163363,
     -1px 1px 0 #163363,
     1px 1px 0 #163363;
-
 }
 
 .hero img {
@@ -130,7 +129,6 @@ h1 {
   transform: translateX(-50%);
   width: 100%;
   text-align: center;
-  font-size: 4rem;
   margin: 0;
   color: #FFEB11;
   padding: 0.5rem 1rem;
@@ -139,4 +137,6 @@ h1 {
     1px -1px 0 #163363,
     -1px 1px 0 #163363,
     1px 1px 0 #163363;
+  font-size: clamp(1.5rem, 12vw, 9rem)
+
 }
