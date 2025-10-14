@@ -56,7 +56,7 @@ export function RulesPage() {
                         Kuchyňka
                     </Title>
                     <div className="text-content">
-                        <ul><p>Plně vybavená společná kuchňka nabízí:</p>
+                        <ul><p>Plně vybavená společná kuchyňka nabízí:</p>
                             <li>Nádobí, lednici s mrazákem.</li>
                             <li>Rychlovarnou konvici, mikrovlnnou troubu.</li>
                             <li>Jednoplotýnkový vařič.</li>

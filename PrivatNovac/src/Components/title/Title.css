@@ -7,9 +7,13 @@
 .title-container {
     border: 12px solid transparent;
     padding: 0rem;
-    margin: 0rem;
-    display: block;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    max-width: 900px;
+    width: 100%;
 }
 
 .frame-blue {

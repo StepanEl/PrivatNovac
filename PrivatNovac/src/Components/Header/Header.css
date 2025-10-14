@@ -20,6 +20,8 @@
   color: inherit;
 }
 
+
+/* Mobile hamburger default hidden on desktop */
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -51,7 +53,38 @@
   justify-content: center;
   align-items: flex-start;
   animation: fadeIn 0.3s;
-  color: #fff
+  color: #fff;
+}
+.desktop-nav {
+  display: none;
+}
+
+.mobile-nav {
+  display: flex;
+}
+
+@media (min-width: 1000px) {
+  .desktop-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  .desktop-nav a, .desktop-nav .active, .desktop-nav .logo-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .desktop-nav a:hover {
+    color: #FFEB11;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .menu-overlay {
+    display: none;
+  }
 }
 
 

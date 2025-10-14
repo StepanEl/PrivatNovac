@@ -1,5 +1,4 @@
 import './Header.css';
-import novac from '../../img/novac2.png';
 import novac1 from '../../img/novac1.png';
 import { Link } from 'react-router';
 
@@ -10,11 +9,23 @@ export function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     return (
         <header>
-            <div className="navigation" >
+            <div className="navigation">
                 <Link to="/" className="logo-link">
                     <h1 onClick={() => setMenuOpen(false)}>Privát Nováč</h1>
                 </Link>
-                <nav>
+
+                {/* Desktop navigation */}
+                <nav className="desktop-nav">
+                    <HashLink smooth to="/#RoomsSection">Pokoje</HashLink>
+                    <HashLink smooth to="/#common">Společné prostory</HashLink>
+                    <Link to="/vybaveni-a-pravidla">Pravidla ubytování</Link>
+                    <a href="#tipy">Tipy na výlety</a>
+                    <Link to="/cenik">Ceník</Link>
+                    <a href="#contact">Kontakt</a>
+                </nav>
+
+                {/* Mobile hamburger */}
+                <nav className="mobile-nav">
                     <button
                         className={`hamburger${menuOpen ? ' open' : ''}`}
                         onClick={() => setMenuOpen(!menuOpen)}
@@ -27,9 +38,10 @@ export function Header() {
                 </nav>
             </div>
             <div className="hero">
-                <img src={novac} alt="Obrázek města" />
+                <img src={novac1} alt="Obrázek města" />
                 <h1 className="hero-title">Privát Nováč</h1>
             </div>
+            {/* Mobile menu overlay */}
             {menuOpen && (
                 <div className="menu-overlay">
                     <div className="menu-content">
@@ -52,4 +64,4 @@ export function Header() {
             )}
         </header>
     );
-};
+}

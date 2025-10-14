@@ -25,3 +25,35 @@
   color: white;
   font-size: 0.8rem;
 }
+
+a:hover {
+    color: #FFEB11;
+  }
+
+@media (max-width: 999px) {
+  #desktop-contact {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  #mobile-contact {
+    display: none;
+  }
+
+  #desktop-contact {
+    display: block;
+  }
+
+  .footer-contact {
+    display: flex;
+    justify-content: space-evenly
+  }
+
+  .footer-contact a {
+  color: inherit;
+}
+ .footer-contact a:hover {
+    color: #FFEB11;
+  }
+
+}
