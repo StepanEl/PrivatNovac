@@ -9,12 +9,13 @@ import { Title } from '../../Components/title/Title';
 import map from '../../img/map.jpg';
 import photomap from '../../img/photomap.jpg';
 import './style.css';
+import { Hero } from '../../Components/Hero/Hero';
 
 export function HomePage() {
   return (
     <div className="container">
       <Header />
-
+      <Hero />
       <main>
         <div className="element-na-secondary">
           <Title variant="secondary"> Náš penzion vás srdečně zve<br />
@@ -43,7 +44,7 @@ export function HomePage() {
         <div className="element-na-primary price-container">
           <h2 className='small-title'>Cena za ubytování</h2>
           <PriceForm />
-                <p>Dítě ve vlastní postýlce zdarma</p>
+          <p>Dítě ve vlastní postýlce zdarma</p>
 
           <Link to='/cenik'><Button text="Ceník a storno podmínky" className="explore-btn" /></Link>
 

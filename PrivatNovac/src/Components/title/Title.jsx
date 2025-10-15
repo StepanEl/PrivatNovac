@@ -6,6 +6,8 @@ export function Title ({ children, variant }) {
             ? 'frame-white'
             : variant === 'secondary'
             ? 'frame-blue'
+             : variant === 'secondary-small'
+            ? 'frame-blue small'
             : '';
 
     return (

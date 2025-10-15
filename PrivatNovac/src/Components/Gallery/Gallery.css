@@ -1,0 +1,40 @@
+
+.gallery-swiper {
+	width: 100%;
+	height: auto;
+}
+
+@media (min-width: 600px) {
+    .gallery-swiper {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .gallery-swiper {
+        width: 50%;
+    }
+}
+
+.gallery-slide-wrapper {
+	position: relative;
+}
+
+.gallery-image {
+	width: 100%;
+	display: block;
+}
+
+.gallery-text-block {
+	text-align: center;
+	margin-block: 2rem;
+	position: relative;
+}
+
+.gallery-icon {
+	position: absolute;
+	right: 20px;
+	bottom: -30px;
+	width: 32px;
+	height: 32px;
+}

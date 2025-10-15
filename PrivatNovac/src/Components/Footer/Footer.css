@@ -27,14 +27,19 @@
 }
 
 a:hover {
-    color: #FFEB11;
-  }
+  color: #FFEB11;
+}
+
+footer .hero {
+  margin-top: 0;
+}
 
 @media (max-width: 999px) {
   #desktop-contact {
     display: none;
   }
 }
+
 @media (min-width: 1000px) {
   #mobile-contact {
     display: none;
@@ -49,10 +54,14 @@ a:hover {
     justify-content: space-evenly
   }
 
+  .element-na-primary.footer-contact{
+    padding: 0;
+  }
   .footer-contact a {
-  color: inherit;
-}
- .footer-contact a:hover {
+    color: inherit;
+  }
+
+  .footer-contact a:hover {
     color: #FFEB11;
   }
 

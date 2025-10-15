@@ -17,7 +17,7 @@ export function Header() {
                 {/* Desktop navigation */}
                 <nav className="desktop-nav">
                     <HashLink smooth to="/#RoomsSection">Pokoje</HashLink>
-                    <HashLink smooth to="/#common">Společné prostory</HashLink>
+                    <Link to="/spolecne-prostory">Společné prostory</Link>
                     <Link to="/vybaveni-a-pravidla">Pravidla ubytování</Link>
                     <a href="#tipy">Tipy na výlety</a>
                     <Link to="/cenik">Ceník</Link>
@@ -37,10 +37,7 @@ export function Header() {
                     </button>
                 </nav>
             </div>
-            <div className="hero">
-                <img src={novac1} alt="Obrázek města" />
-                <h1 className="hero-title">Privát Nováč</h1>
-            </div>
+           
             {/* Mobile menu overlay */}
             {menuOpen && (
                 <div className="menu-overlay">

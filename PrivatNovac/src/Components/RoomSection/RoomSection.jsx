@@ -66,7 +66,7 @@ export function RoomsSection() {
                             border: 'white 1px solid',
                             borderRadius: '4px',
                             cursor: 'pointer',
-                            fontSize: '1.1rem',
+                            fontSize: '1rem',
                             fontFamily: 'Andika New Basic, Arial, sans-serif',
                             flexGrow: 1,
                         }}

@@ -3,11 +3,15 @@ import { Header } from '../../Components/Header/Header';
 import { Footer } from '../../Components/Footer/Footer';
 import { Title } from '../../Components/title/Title';
 import { PriceForm } from '../../Components/PriceForm/PriceForm';
+import { Hero } from '../../Components/Hero/Hero';
 
 export function PricePage() {
     return (
         <div className="container">
             <Header />
+            <div className="mobile-rules">
+                <Hero />
+            </div>
             <main>
                 <div className="element-na-secondary price-page-title">
                     <Title variant="secondary">
@@ -49,16 +53,18 @@ export function PricePage() {
                     </table>
                     <p className='childrenBed'>Dítě ve vlastní postýlce zdarma.</p>
                 </div>
+                <div className="element-na-secondary">
                 <div className="element-na-primary price-container">
                     <h2 className='small-title'>Cena za ubytování</h2>
                     <PriceForm />
+                </div>
                 </div>
                 <div className="element-na-secondary price-page-title">
                     <Title variant="secondary">
                         <h2 className='small-title'>Storno podmínky a zálohy</h2>
                     </Title>
 
-                    <div className="price-info">
+                    <div className="info-rules">
                         <ul>
                             <li>Záloha činí cenu 1 noci z ceny kalkulované za rezervovaný pobyt. </li>
                             <li>Není-li záloha uhrazena do dohodnutého termínu, rezervace zaníka.</li>

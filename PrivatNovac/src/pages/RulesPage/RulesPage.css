@@ -18,5 +18,24 @@ ul {
 .icons-rules {
     display: flex;
     justify-content: center;
-
 }
+.container {
+   margin-top: 1rem;
+}
+
+@media (min-width: 1000px) {
+    .info-rules {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .mobile-rules {
+        display: none;
+    }
+    .desktop-rules {
+        margin: 0 auto;
+    }
+}
+
