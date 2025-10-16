@@ -1,6 +1,4 @@
 .gallery-swiper {
-	--swiper-theme-color: white;
-	/* updated theme color */
 	width: 100%;
 	height: auto;
 }
@@ -45,8 +43,4 @@
 	--swiper-navigation-color: white;
 	--swiper-navigation-top-offset: 35%;
 	--swiper-navigation-size: 50px
-}
-
-.gallery-swiper .swiper-pagination-bullet {
-	--swiper-pagination-color: #2957A4;
 }

@@ -26,7 +26,7 @@ export function HomePage() {
         <div className="desktop-homePage element-na-secondary">
 
           <section className="info-section">
-            <div className="info-text">
+            <div className="info-text right">
               <p>Nabízíme útulné podkrovní pokoje s vlastním sociálním zařízením, masážním sprchovým boxem a společnou kuchyňkou.</p>
               <img src="img/icons/Wifi.svg" alt="Ikona WiFi" className="info-icon" />
             </div>
@@ -35,14 +35,14 @@ export function HomePage() {
 
           <section className="info-section">
             <img src="img/info/2.jpg" alt="Parkoviště" className="info-image" />
-            <div className="info-text">
+            <div className="info-text left">
               <p>Parkování aut je na oploceném pozemku v těsné blízkosti ubytování.</p>
               <img src="img/icons/Vector.svg" alt="Ikona parkoviště" className="info-icon" />
             </div>
           </section>
 
           <section className="info-section">
-            <div className="info-text">
+            <div className="info-text right">
               <p>Pro cyklisty je k dispozici zastřešené na noc uzamykatelné parkování s možností nabíjení elektrokol.</p>
               <img src="img/icons/bicycle.svg" alt="Ikona kola" className="info-icon" />
             </div>
@@ -51,14 +51,14 @@ export function HomePage() {
 
           <section className="info-section">
             <img src="img/info/4.jpg" alt="Bazén" className="info-image" />
-            <div className="info-text">
+            <div className="info-text left">
               <p>Na zahradě si můžete dopřát odpočinek u bazénu s lehátky, posedět v dřevěném altánu nebo si vychutnat grilování u venkovního krbu.</p>
               <img src="img/icons/swimming.svg" alt="Ikona bazénu" className="info-icon" />
             </div>
           </section>
 
           <section className="info-section">
-            <div className="info-text">
+            <div className="info-text right">
               <p>Po dohodě si můžete večer užít jedinečný zážitek - promítání filmů majitele ubytování, režiséra Hugo Habrmana v útulném domácím letním kině.</p>
               <img src="img/icons/video-camera.svg" alt="Ikona kamery" className="info-icon" />
             </div>

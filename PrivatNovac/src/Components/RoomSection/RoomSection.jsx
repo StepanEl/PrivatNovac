@@ -4,7 +4,7 @@ import { Button } from '../Button/Button';
 import { Link } from 'react-router';
 import './RoomSection.css';
 
-const rooms = [
+export const rooms = [
     {
         name: 'Pokoj č. 1',
         gallery: [

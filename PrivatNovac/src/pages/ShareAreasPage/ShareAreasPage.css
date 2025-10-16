@@ -1,14 +1,23 @@
 @media (min-width: 1000px) {
     .container {
         margin: 0 auto;
-          padding-top: 60px;
+        padding-top: 60px;
 
     }
 
     .text-content {
         max-width: 800px;
         margin: 0 auto;
-        padding: 1rem;
         text-align: left;
     }
+
+    .rooms-title {
+        padding-top: 1rem;
+    }
+
+    .share-areas-page ul {
+        padding-left: 4rem;
+    }
+
+
 }

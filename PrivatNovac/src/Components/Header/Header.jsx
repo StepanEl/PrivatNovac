@@ -16,7 +16,7 @@ export function Header() {
 
                 {/* Desktop navigation */}
                 <nav className="desktop-nav">
-                    <HashLink smooth to="/#RoomsSection">Pokoje</HashLink>
+                    <Link to="/pokoje">Pokoje</Link>
                     <Link to="/spolecne-prostory">Společné prostory</Link>
                     <Link to="/vybaveni-a-pravidla">Pravidla ubytování</Link>
                     <a href="#tipy">Tipy na výlety</a>
