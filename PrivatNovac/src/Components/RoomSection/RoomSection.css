@@ -1,0 +1,46 @@
+.rooms-section {
+    background: #2957A4;
+    color: white;
+    padding: 2rem 0 0 0;
+}
+
+.rooms-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  margin-inline: 0.5rem;
+}
+
+.rooms-tab {
+  padding: 1rem 0.4rem;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Andika New Basic', Arial, sans-serif;
+  flex-grow: 1;
+  background: transparent; 
+}
+
+.rooms-tab.active {
+  background: #112951;
+}
+
+.rooms-info {
+  margin: 1rem;
+  color: inherit;
+}
+
+.rooms-info div {
+  margin-bottom: 0.25rem;
+}
+
+
+
+@media (max-width: 600px) {
+  .rooms-tab {
+    padding: 0.75rem 0.3rem;
+    font-size: 0.95rem;
+  }
+}

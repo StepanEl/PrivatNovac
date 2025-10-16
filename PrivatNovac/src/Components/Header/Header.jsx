@@ -49,7 +49,7 @@ export function Header() {
                             <a href="#">Tipy na výlety</a>
                              <Link to='/cenik'>Ceník</Link>
                             <HashLink smooth to="/#arrival" onClick={() => setMenuOpen(false)}>Kudy k nám</HashLink>
-                            <a href="#contact" onClick={() => setMenuOpen(false)}>Kontakt</a>
+                            <a href="#mobile-contact" onClick={() => setMenuOpen(false)}>Kontakt</a>
                         </nav>
                         <div className="menu-contact">
                             <p>V Zátiší, 549 01 Nové Město nad Metují<br />

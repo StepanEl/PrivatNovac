@@ -15,23 +15,35 @@
 .element-na-primary {
   background: var(--background-primary);
   color: var(--text-on-primary);
-  padding: 1rem 1.5rem
+  padding: 1.5rem
 }
 
 .element-na-secondary {
   background: var(--background-secondary);
   color: var(--text-on-secondary);
-  padding: 1rem 1.5rem
+  padding: 1.5rem
 }
 
 html {
   font-family: 'Alegreya Sans', Arial, sans-serif;
   font-weight: 500;
+  font-size: 19px;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin: 0;
+  color: #FFEB11;
+  text-shadow:
+    -1px -1px 0 #163363,
+    1px -1px 0 #163363,
+    -1px 1px 0 #163363,
+    1px 1px 0 #163363;
 }
 
 h2 {

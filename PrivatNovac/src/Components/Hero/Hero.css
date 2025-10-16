@@ -1,7 +1,7 @@
 
 .hero {
   position: relative;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 @media (min-width: 1000px) {

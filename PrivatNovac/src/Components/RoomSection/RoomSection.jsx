@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Gallery } from '../../Components/Gallery/Gallery';
 import { Button } from '../Button/Button';
 import { Link } from 'react-router';
+import './RoomSection.css';
 
 const rooms = [
     {
@@ -53,34 +54,24 @@ export function RoomsSection() {
     const [active, setActive] = useState(0);
 
     return (
-        <div style={{ background: '#2957A4', color: 'white', paddingTop: '0.5rem' }}>
-            <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem', marginInline: '0.5rem' }}>
+        <div className="rooms-section">
+            <div className="rooms-tabs">
                 {rooms.map((room, idx) => (
                     <button
                         key={room.name}
                         onClick={() => setActive(idx)}
-                        style={{
-                            padding: '1rem 0.4rem',
-                            background: idx === active ? '#112951' : '#2957A4',
-                            color: 'white',
-                            border: 'white 1px solid',
-                            borderRadius: '4px',
-                            cursor: 'pointer',
-                            fontSize: '1rem',
-                            fontFamily: 'Andika New Basic, Arial, sans-serif',
-                            flexGrow: 1,
-                        }}
+                        className={`rooms-tab ${idx === active ? 'active' : ''}`}
                     >
                         {room.name}
                     </button>
                 ))}
             </div>
             <div>
-                <div style={{ margin: '1rem' }}>
-                    <div >{rooms[active].text1}</div>
-                    <div >{rooms[active].text2}</div>
-                    <div >{rooms[active].text3}</div>
-                </div>
+                <ul className="rooms-info">
+                    <li>{rooms[active].text1}</li>
+                    <li>{rooms[active].text2}</li>
+                    <li>{rooms[active].text3}</li>
+                </ul>
                 <Gallery slides={rooms[active].gallery} />
             </div>
             <Link to='/vybaveni-a-pravidla'><Button text={

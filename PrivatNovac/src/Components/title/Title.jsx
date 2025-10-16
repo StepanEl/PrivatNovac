@@ -1,14 +1,16 @@
 import './Title.css';
 
-export function Title ({ children, variant }) {
+export function Title({ children, variant }) {
     const frameClass =
         variant === 'primary'
             ? 'frame-white'
             : variant === 'secondary'
-            ? 'frame-blue'
-             : variant === 'secondary-small'
-            ? 'frame-blue small'
-            : '';
+                ? 'frame-blue'
+                : variant === 'secondary-small'
+                    ? 'frame-blue small'
+                    : variant === 'secondary-intro'
+                        ? 'frame-blue intro'
+                        : '';
 
     return (
         <div className={`title-container ${frameClass}`}>
