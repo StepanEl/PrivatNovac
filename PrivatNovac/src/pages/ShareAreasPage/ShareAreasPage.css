@@ -6,7 +6,7 @@
     }
 
     .text-content {
-        max-width: 800px;
+        max-width: 850px;
         margin: 0 auto;
         text-align: left;
     }
@@ -19,5 +19,11 @@
         padding-left: 4rem;
     }
 
+    .text-content a {
+        color: inherit;
+    }
 
+    .text-content a:hover {
+        color: white
+    }
 }

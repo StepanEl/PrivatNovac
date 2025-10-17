@@ -39,8 +39,14 @@
   margin-bottom: 0;
 }
 
+@media (max-width: 600px) {
+  .element-na-secondary.price-container {
+    padding: 0;
+  }
+}
+
 @media (min-width: 1000px) {
-  .price-container {
+  .price-container div {
     max-width: 600px;
     margin: 0 auto;
   }

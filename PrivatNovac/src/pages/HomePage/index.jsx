@@ -6,8 +6,7 @@ import { Header } from '../../Components/Header/Header';
 import { PriceForm } from '../../Components/PriceForm/PriceForm';
 import { RoomsSection } from '../../Components/RoomSection/RoomSection';
 import { Title } from '../../Components/title/Title';
-import map from '../../img/map.jpg';
-import photomap from '../../img/photomap.jpg';
+
 import './style.css';
 import { Hero } from '../../Components/Hero/Hero';
 
@@ -18,7 +17,7 @@ export function HomePage() {
       <Hero />
       <main>
         <div className="element-na-secondary">
-          <Title variant="secondary-intro"> Náš penzion Privát Nováč vás srdečně zve<br />
+          <Title variant="secondary-intro"> Náš penzion vás srdečně zve<br />
             k ubytování do Nového Města nad Metují.
           </Title>
         </div>
@@ -109,8 +108,8 @@ export function HomePage() {
             </div>
           </div>
           <div>
-            <img src={photomap} alt="foto mapa" className="map-image" />
-            <img src={map} alt="mapa" className="map-image" />
+            <img src="img/arrival/photomap.jpg" alt="foto mapa" className="map-image" />
+            <img src="img/arrival/map.jpg" alt="mapa" className="map-image" />
           </div>
         </div>
       </main>

@@ -53,8 +53,8 @@ export function PricePage() {
                     </table>
                     <p className='childrenBed'>Dítě ve vlastní postýlce zdarma.</p>
                 </div>
-                <div className="element-na-secondary">
-                <div className="element-na-primary price-container">
+                <div className="element-na-secondary price-container">
+                <div className="element-na-primary ">
                     <h2 className='small-title'>Cena za ubytování</h2>
                     <PriceForm />
                 </div>

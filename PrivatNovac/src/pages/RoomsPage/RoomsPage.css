@@ -8,3 +8,7 @@
    margin: 0.5rem;
    padding-left: 2rem;
   }
+
+  .text-content.end-block p{
+    margin-bottom: 0;
+  }

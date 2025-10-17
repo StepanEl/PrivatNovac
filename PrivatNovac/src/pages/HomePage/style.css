@@ -76,4 +76,7 @@
     width: 400px;
     border-radius: 8px;
   }
+  .info-icon {
+    height: 2rem;
+  }
 }

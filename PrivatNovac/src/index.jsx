@@ -6,6 +6,7 @@ import './global.css';
 import { PricePage } from './pages/PricePage/PricePage.jsx';
 import { ShareAreasPage } from './pages/ShareAreasPage/ShareAreasPage.jsx';
 import { RoomsPage } from './pages/RoomsPage/RoomsPage.jsx';
+import { ContactPage } from './pages/ContactPage/ContactPage.jsx';
 
 createRoot(document.querySelector('#app')).render(
   <BrowserRouter basename="/PrivatNovac">
@@ -15,6 +16,7 @@ createRoot(document.querySelector('#app')).render(
       <Route path="/cenik" element={<PricePage />} />
       <Route path="/spolecne-prostory" element={<ShareAreasPage />} />
       <Route path="/pokoje" element={<RoomsPage />} />
+      <Route path="/kontakt" element={<ContactPage />} />
 
     </Routes>
   </BrowserRouter>

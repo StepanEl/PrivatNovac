@@ -19,6 +19,8 @@ export function RoomsPage() {
                         <p>Privát Nováč nabízí útulné ubytování v podkroví rodinného domu.<br />
                             K dispozici jsou 4 pokoje. Celková kapacita je 12 lůžek
                         </p>
+                    </div>
+                    <div className="text-content end-block">
                         <p>Všechny pokoje jsou vybaveny vlastním sociálním zařízením
                             s masážním sprchovým boxem, ručníky, WiFi, LCD televizí a přenosným ventilátorem.
                             Na patře je k dispozici společná kuchyňka. Ve vstupní místnosti je pro každý pokoj uzamykatelná skříňka na boty.</p>

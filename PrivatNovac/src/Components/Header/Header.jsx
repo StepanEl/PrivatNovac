@@ -21,7 +21,7 @@ export function Header() {
                     <Link to="/vybaveni-a-pravidla">Pravidla ubytování</Link>
                     <a href="#tipy">Tipy na výlety</a>
                     <Link to="/cenik">Ceník</Link>
-                    <a href="#contact">Kontakt</a>
+                    <Link to="/kontakt">Kontakt</Link>
                 </nav>
 
                 {/* Mobile hamburger */}

@@ -1,0 +1,13 @@
+.contact-text {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-text a {
+    color: inherit;
+}
+
+.contact-text a:hover {
+    color: white;
+}

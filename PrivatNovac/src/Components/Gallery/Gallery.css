@@ -32,10 +32,10 @@
 
 .gallery-icon {
 	position: absolute;
-	right: 40px;
-	bottom: -30px;
-	width: 40px;
-	height: 40px;
+	right: 2rem;
+	bottom: -2rem;
+	width: auto;
+	height: 2rem;
 }
 
 .gallery-swiper .swiper-button-next,
