@@ -19,7 +19,7 @@ export function Header() {
                     <Link to="/pokoje">Pokoje</Link>
                     <Link to="/spolecne-prostory">Společné prostory</Link>
                     <Link to="/vybaveni-a-pravidla">Pravidla ubytování</Link>
-                    <a href="#tipy">Tipy na výlety</a>
+                    <Link to='/tipy-na-vylety'> Tipy na výlety</Link>
                     <Link to="/cenik">Ceník</Link>
                     <Link to="/kontakt">Kontakt</Link>
                 </nav>
@@ -37,7 +37,7 @@ export function Header() {
                     </button>
                 </nav>
             </div>
-           
+
             {/* Mobile menu overlay */}
             {menuOpen && (
                 <div className="menu-overlay">
@@ -46,15 +46,15 @@ export function Header() {
                         <nav className="menu-nav" role="navigation" aria-label="Menu překryvné navigace">
                             <HashLink smooth to="/#RoomsSection" onClick={() => setMenuOpen(false)}>Pokoje</HashLink>
                             <Link to='/vybaveni-a-pravidla'> Vybavení a pravidla ubytování</Link>
-                            <a href="#">Tipy na výlety</a>
-                             <Link to='/cenik'>Ceník</Link>
+                            <Link to='/tipy-na-vylety'> Tipy na výlety</Link>
+                            <Link to='/cenik'>Ceník</Link>
                             <HashLink smooth to="/#arrival" onClick={() => setMenuOpen(false)}>Kudy k nám</HashLink>
                             <a href="#mobile-contact" onClick={() => setMenuOpen(false)}>Kontakt</a>
                         </nav>
                         <div className="menu-contact">
                             <p>V Zátiší, 549 01 Nové Město nad Metují<br />
-                            hugo.habrman@gmail.com<br />
-                            +420 491 470 085, +420 739 292 523</p>
+                                hugo.habrman@gmail.com<br />
+                                +420 491 470 085, +420 739 292 523</p>
                         </div>
                     </div>
                 </div>

@@ -10,6 +10,7 @@ import { PricePage } from './pages/PricePage/PricePage.jsx';
 import { ShareAreasPage } from './pages/ShareAreasPage/ShareAreasPage.jsx';
 import { RoomsPage } from './pages/RoomsPage/RoomsPage.jsx';
 import { ContactPage } from './pages/ContactPage/ContactPage.jsx';
+import { TipsPage } from './pages/TipsPage/TipsPage.jsx';
 
 createRoot(document.querySelector('#app')).render(
   <HelmetProvider>
@@ -23,6 +24,7 @@ createRoot(document.querySelector('#app')).render(
         <Route path="/spolecne-prostory" element={<ShareAreasPage />} />
         <Route path="/pokoje" element={<RoomsPage />} />
         <Route path="/kontakt" element={<ContactPage />} />
+        <Route path="/tipy-na-vylety" element={<TipsPage />} />
       </Routes>
     </BrowserRouter>
   </HelmetProvider>
