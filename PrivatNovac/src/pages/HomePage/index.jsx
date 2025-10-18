@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { Helmet } from 'react-helmet-async';
 import { Button } from '../../Components/Button/Button';
 import { Footer } from '../../Components/Footer/Footer';
 import { Gallery } from '../../Components/Gallery/Gallery';
@@ -11,11 +12,56 @@ import './style.css';
 import { Hero } from '../../Components/Hero/Hero';
 
 export function HomePage() {
+  const siteTitle = 'Privát Nováč — penzion v Novém Městě nad Metují | Ubytování s bazénem a parkováním';
+  const siteDescription = 'Privát Nováč v Novém Městě nad Metují nabízí útulné podkrovní pokoje, bezplatné Wi-Fi, uzamykatelné parkování pro elektrokola a zahradu s bazénem. Rezervujte pohodlné ubytování blízko centra města.';
+  const origin = typeof window !== 'undefined' && window.location ? window.location.origin : 'https://your-domain.example';
+  const siteUrl = origin + (typeof window !== 'undefined' && window.location ? window.location.pathname : '/PrivatNovac');
+  const ogImage = origin + '/PrivatNovac/img/novac1.png';
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Privát Nováč",
+    "description": siteDescription,
+    "url": siteUrl,
+    "telephone": "+420 739 292 523",
+    "email": "hugo.habrman@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "V Zátiší",
+      "addressLocality": "Nové Město nad Metují",
+      "postalCode": "549 01",
+      "addressCountry": "CZ"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.327785,
+      "longitude": 16.164823
+    },
+    "image": [ogImage]
+  };
+
   return (
     <div className="container">
+      <Helmet>
+        <title>{siteTitle}</title>
+        <meta name="description" content={siteDescription} />
+        {/* Open Graph */}
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:description" content={siteDescription} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:image" content={ogImage} />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={siteTitle} />
+        <meta name="twitter:description" content={siteDescription} />
+        <meta name="twitter:image" content={ogImage} />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      </Helmet>
       <Header />
-      <Hero />
       <main>
+        <Hero />
         <div className="element-na-secondary">
           <Title variant="secondary-intro"> Náš penzion vás srdečně zve<br />
             k ubytování do Nového Města nad Metují.
@@ -70,11 +116,11 @@ export function HomePage() {
         <div className="mobile-homePage">
            <div className="element-na-secondary-intro">
           <Gallery slides={[
-            { image: 'img/info/1.jpg', text: 'Nabízíme útulné podkrovní pokoje s vlastním sociálním zařízením, masážním sprchovým boxem a společnou kuchyňkou.', icon: 'img/icons/Wifi.svg' },
-            { image: 'img/info/2.jpg', text: 'Parkování aut je na oploceném pozemku v těsné blízkosti ubytování.', icon: 'img/icons/Vector.svg' },
-            { image: 'img/info/3.jpg', text: 'Pro cyklisty je k dispozici zastřešené na noc uzamykatelné parkování s možností nabíjení elektrokol.', icon: 'img/icons/bicycle.svg' },
-            { image: 'img/info/4.jpg', text: 'Na zahradě si můžete dopřát odpočinek u bazénu s lehátky, posedět v dřevěném altánu nebo si vychutnat grilování u venkovního krbu.', icon: 'img/icons/swimming.svg' },
-            { image: 'img/info/5.jpg', text: 'Po dohodě si můžete večer užít jedinečný zážitek - promítání filmů majitele ubytování, režiséra Hugo Habrmana v útulném domácím letním kině.', icon: 'img/icons/video-camera.svg' }
+            { image: 'img/info/1.jpg', text: 'Nabízíme útulné podkrovní pokoje s vlastním sociálním zařízením, masážním sprchovým boxem a společnou kuchyňkou.', icon: 'img/icons/Wifi.svg', iconAlt: 'Ikona WiFi' },
+            { image: 'img/info/2.jpg', text: 'Parkování aut je na oploceném pozemku v těsné blízkosti ubytování.', icon: 'img/icons/Vector.svg', iconAlt: 'Ikona parkoviště' },
+            { image: 'img/info/3.jpg', text: 'Pro cyklisty je k dispozici zastřešené na noc uzamykatelné parkování s možností nabíjení elektrokol.', icon: 'img/icons/bicycle.svg', iconAlt: 'Ikona kola' },
+            { image: 'img/info/4.jpg', text: 'Na zahradě si můžete dopřát odpočinek u bazénu s lehátky, posedět v dřevěném altánu nebo si vychutnat grilování u venkovního krbu.', icon: 'img/icons/swimming.svg', iconAlt: 'Ikona bazénu' },
+            { image: 'img/info/5.jpg', text: 'Po dohodě si můžete večer užít jedinečný zážitek - promítání filmů majitele ubytování, režiséra Hugo Habrmana v útulném domácím letním kině.', icon: 'img/icons/video-camera.svg', iconAlt: 'Ikona kamery' }
           ]} />
           </div>
           <div id='RoomsSection'>

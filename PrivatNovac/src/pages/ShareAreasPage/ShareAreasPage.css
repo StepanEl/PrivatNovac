@@ -26,4 +26,8 @@
     .text-content a:hover {
         color: white
     }
+
+    .element-na-primary.block.share {
+        margin-block:2rem;
+    }
 }

@@ -11,3 +11,11 @@
 .contact-text a:hover {
     color: white;
 }
+
+.element-na-primary.block.contact{
+    max-width: 700px;
+};
+
+.contact-text.arrival {
+    padding:1rem;
+}

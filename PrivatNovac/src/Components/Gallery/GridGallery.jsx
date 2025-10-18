@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -17,6 +17,20 @@ export const GridGallery = ({ slides }) => {
     setOpen(true);
   };
 
+  const modalRef = useRef(null);
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    if (open) {
+      document.addEventListener('keydown', onKey);
+      // focus modal for screen readers
+      setTimeout(() => modalRef.current?.focus(), 50);
+    }
+    return () => document.removeEventListener('keydown', onKey);
+  }, [open]);
+
   return (
     <div className="grid-gallery-root">
       <div className="grid-gallery">
@@ -24,8 +38,11 @@ export const GridGallery = ({ slides }) => {
           <div key={i} className="grid-item">
             <img
               src={`${import.meta.env.BASE_URL}${s.image}`}
-              alt={s.text || ''}
+              alt={s.text || `Obrázek ${i + 1}`}
               onClick={() => openAt(i)}
+              onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') openAt(i); }}
+              role="button"
+              tabIndex={0}
               loading="lazy"
             />
           </div>
@@ -34,8 +51,9 @@ export const GridGallery = ({ slides }) => {
 
         {/* Modal with Swiper for zoom/navigation */}
       {open && (
-        <div className="gallery-modal" onClick={() => setOpen(false)}>
-          <div className="gallery-modal-inner" onClick={(e) => e.stopPropagation()}>
+        <div className="gallery-modal" onClick={() => setOpen(false)} aria-hidden={open ? 'false' : 'true'}>
+          <div className="gallery-modal-inner" onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true" tabIndex={-1} ref={modalRef}>
+            <button className="gallery-modal-close" onClick={() => setOpen(false)} aria-label="Zavřít galerii">✕</button>
             <Swiper
               modules={[Navigation, Pagination, Zoom]}
               navigation

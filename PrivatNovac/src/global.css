@@ -61,3 +61,24 @@ h3 {
     font-size: 21px;
   }
 }
+
+/* Accessibility: visible focus styles for keyboard users */
+:focus-visible {
+  outline: 3px solid #FFEB11;
+  outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.rooms-tab:focus-visible,
+.gallery-slide-wrapper img:focus-visible {
+  outline: 3px solid #FFEB11;
+  outline-offset: 2px;
+}
+
+/* Ensure links that look like plain text are still focusable and visible */
+.nav-text:focus-visible {
+  outline: 3px solid #FFEB11;
+  outline-offset: 2px;
+}

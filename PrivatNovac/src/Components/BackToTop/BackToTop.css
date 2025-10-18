@@ -1,0 +1,35 @@
+.back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #2957A4;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 180ms ease, transform 180ms ease;
+  cursor: pointer;
+  z-index: 1200;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top svg {
+  display: block;
+  color: #FFEB11;
+}
+
+.back-to-top:focus {
+  outline: 3px solid #FFEB11;
+  outline-offset: 3px;
+}

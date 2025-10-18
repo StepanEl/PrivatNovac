@@ -2,6 +2,7 @@ import { Footer } from "../../Components/Footer/Footer";
 import { Gallery } from "../../Components/Gallery/Gallery";
 import { Header } from "../../Components/Header/Header";
 import { Title } from "../../Components/title/Title";
+import { Helmet } from 'react-helmet-async';
 import parking from '../../../public/img/icons/parking.svg';
 import pet from '../../../public/img/icons/pet.svg';
 import slipper from '../../../public/img/icons/slipper.svg';
@@ -13,6 +14,10 @@ import { Hero } from "../../Components/Hero/Hero";
 export function RulesPage() {
     return (
         <div className="container">
+            <Helmet>
+                <title>Pravidla ubytování — Privát Nováč | Informace a podmínky</title>
+                <meta name="description" content="Pravidla ubytování v Privát Nováč: informace o parkování, zákazu domácích mazlíčků, přezouvání a bezpečnostních pravidlech." />
+            </Helmet>
             <Header />
             <div className="mobile-rules">
                 <Hero />

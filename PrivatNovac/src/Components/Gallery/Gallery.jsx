@@ -26,7 +26,7 @@ export const Gallery = ({ slides }) => (
               {slide.icon && (
                 <img
                   src={`${import.meta.env.BASE_URL}${slide.icon}`}
-                  alt=""
+                  alt={slide.iconAlt || ''}
                   className="gallery-icon"
                 />
               )}

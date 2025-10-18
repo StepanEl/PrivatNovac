@@ -4,10 +4,15 @@ import { Footer } from '../../Components/Footer/Footer';
 import { Title } from '../../Components/title/Title';
 import { PriceForm } from '../../Components/PriceForm/PriceForm';
 import { Hero } from '../../Components/Hero/Hero';
+import { Helmet } from 'react-helmet-async';
 
 export function PricePage() {
     return (
         <div className="container">
+            <Helmet>
+                <title>Ceník — Privát Nováč | Transparentní ceny ubytování</title>
+                <meta name="description" content="Ceník a storno podmínky Privát Nováč. Podívejte se na ceny podle počtu osob a nocí, informace o zálohách a stornech." />
+            </Helmet>
             <Header />
             <div className="mobile-rules">
                 <Hero />

@@ -15,7 +15,7 @@ export function Header() {
                 </Link>
 
                 {/* Desktop navigation */}
-                <nav className="desktop-nav">
+                <nav className="desktop-nav" role="navigation" aria-label="Hlavní navigace">
                     <Link to="/pokoje">Pokoje</Link>
                     <Link to="/spolecne-prostory">Společné prostory</Link>
                     <Link to="/vybaveni-a-pravidla">Pravidla ubytování</Link>
@@ -25,7 +25,7 @@ export function Header() {
                 </nav>
 
                 {/* Mobile hamburger */}
-                <nav className="mobile-nav">
+                <nav className="mobile-nav" role="navigation" aria-label="Mobilní navigace">
                     <button
                         className={`hamburger${menuOpen ? ' open' : ''}`}
                         onClick={() => setMenuOpen(!menuOpen)}
@@ -43,7 +43,7 @@ export function Header() {
                 <div className="menu-overlay">
                     <div className="menu-content">
                         <img src={novac1} alt="Obrázek města" className="menu-img" />
-                        <nav className="menu-nav">
+                        <nav className="menu-nav" role="navigation" aria-label="Menu překryvné navigace">
                             <HashLink smooth to="/#RoomsSection" onClick={() => setMenuOpen(false)}>Pokoje</HashLink>
                             <Link to='/vybaveni-a-pravidla'> Vybavení a pravidla ubytování</Link>
                             <a href="#">Tipy na výlety</a>

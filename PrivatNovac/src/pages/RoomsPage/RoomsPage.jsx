@@ -4,10 +4,15 @@ import { Title } from '../../Components/title/Title';
 import GridGallery from '../../Components/Gallery/GridGallery';
 import { rooms } from '../../Components/RoomSection/RoomSection';
 import './RoomsPage.css';
+import { Helmet } from 'react-helmet-async';
 
 export function RoomsPage() {
     return (
         <div className="container share-areas-page">
+            <Helmet>
+                <title>Pokoje — Privát Nováč, Nové Město nad Metují | 1-4 osoby, vlastní sociální zařízení</title>
+                <meta name="description" content="Popis pokojů Privát Nováč: komfortní 1-4 lůžkové pokoje s vlastním sociálním zařízením a možností přistýlky. Pohodlné ubytování blízko památek a výletních tras." />
+            </Helmet>
             <Header />
 
             <main>
@@ -17,7 +22,7 @@ export function RoomsPage() {
                     </Title>
                     <div className="info-text-center">
                         <p>Privát Nováč nabízí útulné ubytování v podkroví rodinného domu.<br />
-                            K dispozici jsou 4 pokoje. Celková kapacita je 12 lůžek
+                            K dispozici jsou <strong>4 pokoje</strong>. Celková kapacita je <strong>12 lůžek</strong>.
                         </p>
                     </div>
                     <div className="text-content end-block">
@@ -29,7 +34,8 @@ export function RoomsPage() {
 
                 {rooms.map((r, idx) => (
                     <div key={r.name} className="element-na-secondary">
-                        <Title variant="secondary">
+                        <div className='element-na-primary block'>
+                        <Title variant="primary">
                             <h3 className="rooms-title">{r.name}</h3>
                             <div className="text-content paragraph">
                                 <p>{r.text1}</p>
@@ -38,6 +44,7 @@ export function RoomsPage() {
                             </div>
                             <GridGallery slides={r.gallery} />
                         </Title>
+                        </div>
                     </div>
                 ))}
             </main>

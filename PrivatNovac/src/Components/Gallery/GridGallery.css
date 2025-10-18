@@ -46,6 +46,22 @@
   object-fit: contain;
 }
 
+.gallery-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.gallery-modal-close:focus {
+  outline: 3px solid #FFEB11;
+}
+
 .gallery-modal .swiper-button-next,
 .gallery-modal .swiper-button-prev {
 	--swiper-navigation-color: white;
