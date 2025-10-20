@@ -129,8 +129,8 @@ export function HomePage() {
           <div className="element-na-secondary">
             <Title variant="secondary">
               <h2 className='small-title'>Tipy na výlety</h2>
-              <p>Okolí se vybízí k turistice, výletech na kolech, windserfingu na Rozkoši nebo lyžování v nedalekých Orlických horách.</p>
-              <Button text="Prozkoumat okolí" className="explore-btn" />
+              <p>Okolí vybízí k turistice, výletům na kolech, windsurfingu na Rozkoši nebo lyžování v nedalekých Orlických horách.</p>
+             <Link to='/tipy-na-vylety'><Button text="Prozkoumat okolí" className="explore-btn" /></Link>
             </Title>
           </div>
 
