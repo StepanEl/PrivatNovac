@@ -14,7 +14,7 @@ import { TipsPage } from './pages/TipsPage/TipsPage.jsx';
 
 createRoot(document.querySelector('#app')).render(
   <HelmetProvider>
-    <BrowserRouter basename="/PrivatNovac">
+    <BrowserRouter basename="/PrivatNovac/">
       <ScrollToTop />
   <BackToTop />
       <Routes>
