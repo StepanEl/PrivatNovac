@@ -23,12 +23,15 @@ ul {
    margin-top: 1rem;
 }
 
+.info-rules {
+           text-align: left;
+
+}
 @media (min-width: 1000px) {
     .info-rules {
         max-width: 800px;
         margin: 0 auto;
         padding: 1rem;
-        text-align: left;
     }
 
     .mobile-rules {

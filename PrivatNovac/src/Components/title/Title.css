@@ -39,3 +39,7 @@
     border-image-repeat: stretch stretch;
     border-style: solid;
 }
+
+.title-container.flex-column {
+    display: block;
+}

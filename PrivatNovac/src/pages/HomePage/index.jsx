@@ -154,8 +154,8 @@ export function HomePage() {
             </div>
           </div>
           <div>
-            <img src="img/arrival/photomap.jpg" alt="foto mapa" className="map-image" />
-            <img src="img/arrival/map.jpg" alt="mapa" className="map-image" />
+            <img src="img/arrival/photomap.webp" alt="foto mapa" className="map-image" />
+            <img src="img/arrival/map.webp" alt="mapa" className="map-image" />
           </div>
         </div>
       </main>

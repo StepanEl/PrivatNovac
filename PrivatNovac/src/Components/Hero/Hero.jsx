@@ -1,4 +1,4 @@
-import novac1 from '../../img/novac1.png';
+import novac1 from '../../img/novac1.webp';
 import './Hero.css';
 
 export function Hero() {

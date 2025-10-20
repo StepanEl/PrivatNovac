@@ -80,8 +80,8 @@ export function ContactPage() {
                                 549 01 Nové Město nad Metují<br />
                                 GPS: 50.327785, 16.164823</p>
                             <GridGallery slides={[
-                                { image: 'img/arrival/photomap.jpg' },
-                                { image: 'img/arrival/map.jpg' },
+                                { image: 'img/arrival/photomap.webp' },
+                                { image: 'img/arrival/map.webp' },
                             ]} />
                         </div>
                     

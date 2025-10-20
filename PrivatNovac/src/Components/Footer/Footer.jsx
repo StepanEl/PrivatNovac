@@ -1,5 +1,5 @@
 import './Footer.css';
-import novac from '../../img/novac1.png';
+import novac from '../../img/novac1.webp';
 import { Title } from '../title/Title';
 
 export function Footer() {

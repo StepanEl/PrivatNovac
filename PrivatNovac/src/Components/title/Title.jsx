@@ -1,6 +1,6 @@
 import './Title.css';
 
-export function Title({ children, variant }) {
+export function Title({ children, variant, column }) {
     const frameClass =
         variant === 'primary'
             ? 'frame-white'
@@ -12,8 +12,10 @@ export function Title({ children, variant }) {
                         ? 'frame-blue intro'
                         : '';
 
+    const columnClass = column ? 'flex-column' : '';
+
     return (
-        <div className={`title-container ${frameClass}`}>
+        <div className={`title-container ${frameClass} ${columnClass}`}>
             <div className="title">{children}</div>
         </div>
     );

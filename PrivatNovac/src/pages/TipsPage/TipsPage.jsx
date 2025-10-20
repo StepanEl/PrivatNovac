@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Title } from "../../Components/title/Title";
 import { Header } from "../../Components/Header/Header";
 import { Hero } from "../../Components/Hero/Hero";
+import { Gallery } from "../../Components/Gallery/Gallery";
 
 
 
@@ -31,7 +32,7 @@ export function TipsPage() {
                             <p>V Novém Městě nad Metují je také letiště, kde si lze objednat vyhlídkové lety nebo seskoky padákem.</p>
                             <p>Nadšenci lezení mohou využít cvičných horolezeckých skal HIS nedaleko náměstí.</p>
                             <p>Kraj je vhodný pro rodiny s dětmi, neboť je provázaný pohádkovými bytostmi "Kačenčiny pohádkové říše".</p>
-                            <p>Okolí nabízí dobré podmínky pro pěší turistiku i cyklistiku jelikož se nachází v podhůří Orlických hor. O víkendech jezdí cyklobusy, které Vás dovezou do Orlických hor, do polských Stolových hor a mnoho dalších míst.</p>
+                            <p>Okolí nabízí dobré podmínky pro pěší turistiku i cyklistiku jelikož se nachází v podhůří Orlických hor.</p>
                         </div>
                         <Title variant="secondary">
                             <h2 className="small-title">Cykloturistika</h2>
@@ -45,6 +46,13 @@ export function TipsPage() {
                             <p>Cyklotrasy lze naplánovat také do Dobrušky proslavené F. L. Věkem a města Opočna se zámkem a rozsáhlou expozicí. </p>
                             <p>V sezóně jezdí cyklobusy, které Vás dovezou do Orlických hor, do polských Stolových hor a mnoho dalších míst.</p>
                         </div>
+                        <Gallery slides={[
+                            { image: 'img/tips/dobrosov.webp', text: 'Pevnost Dobrošov z období před II. světovou válkou (10 km)' },
+                            { image: 'img/tips/dobruska.webp', text: 'Dobruška, město F.L. Věka, koupaliště a krytý bazén (9 km)' },
+                            { image: 'img/tips/opocno.webp', text: 'Státní zámek Opočno z 15. století s rozsáhlou expozicí (14 km)' },
+                            { image: 'img/tips/nachod.webp', text: 'Státní zámek Náchod a vojenský hřbitov z r. 1866 (10 km)' },
+                            { image: 'img/tips/peklo.webp', text: 'Peklo - romantické údolí řeky Metuje, stylová restaurace  (5 km)' }
+                        ]} />
                         <Title variant="secondary">
                             <h2 className="small-title">Koupání</h2>
                         </Title>
@@ -53,19 +61,31 @@ export function TipsPage() {
                             <p>Nejbližší aquaparky jsou v Kudowa Zdrój (Polsko, 15 km) a v Hradci Králové (30 km).</p>
                             <p>Přírodní koupání nabízí koupaliště Broumar v Opočně, přehrada Rozkoš včetně rybaření a windsurfing (4 km) a také koupaliště Bystré v Orlických horách.</p>
                         </div>
-                           <Title variant="secondary">
+                        <Title variant="secondary">
                             <h2 className="small-title">Lyžování</h2>
                         </Title>
                         <div className="info-rules">
                             <p>Ski centrum Deštné v Orlických horách je vzdáleno 22 km a nabízí několik sjezdových a běžeckých tratí.</p>
                             <p>Další lyžařské vleky se nacházejí v Sedloňově, Olešnici v Orlických horách, Orlické Záhoří nebo lze využít polský lyžařský areál Zieleniec.</p>
                         </div>
-                                 <Title variant="secondary">
+                        <Title variant="secondary">
                             <h2 className="small-title">Další místa v okolí</h2>
                         </Title>
                         <div className="info-rules">
-     
+
                         </div>
+                        <Gallery slides={[
+                            { image: 'img/tips/aqarium.webp', text: 'Obří akvárium v Hradci Králové (30 km)' },
+                            { image: 'img/tips/hanicka.webp', text: 'Pevnost Hanička z období před II. světovou válkou (40 km)'},
+                            { image: 'img/tips/hronov.webp', text: 'Hronov rodiště spisovatele A. Jiráska, festival "Jiráskův Hronov" (16 km)' },
+                            { image: 'img/tips/kostnice.webp', text: 'Polská Czermna kostnice na území Polské republiky (14 km)' },
+                            { image: 'img/tips/kudowa.webp', text: 'Kudowa Zdrój lázeňské město, Polská republika (15 km)' },
+                            { image: 'img/tips/ostas.webp', text: 'Kaple Hvězda a skalní útvary Ostaš na Broumovsku (40 km)' },
+                            { image: 'img/tips/merkur.webp', text: 'Muzeum Merkur, Police muzeum známého výrobce stavebnic, Ocelové město a další z Merkuru (25 km)' },
+                            { image: 'img/tips/adrsbach.webp', text: 'Teplicko-Adršpašské skály, skalní město (50 km)' }
+                        ]} />
+
+
                     </div>
                 </div>
             </main>

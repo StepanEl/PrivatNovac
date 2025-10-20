@@ -1,5 +1,5 @@
 import './Header.css';
-import novac1 from '../../img/novac1.png';
+import novac1 from '../../img/novac1.webp';
 import { Link } from 'react-router';
 
 import { useState } from 'react';
