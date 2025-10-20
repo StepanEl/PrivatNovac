@@ -23,10 +23,49 @@ export function TipsPage() {
                         <Title variant="secondary">
                             <h2 className="small-title">Tipy na výlety</h2>
                         </Title>
-                        <div className="info-rules"></div>
+                        <div className="info-rules">
 
-                        <p>Zde najdete tipy na zajímavé výlety v okolí našeho ubytování.</p>
-                        
+                            <p>Nové Město nad Metují a jeho okolí je plné historických památek a přírodních krás. Každý kout skrývá něco jedinečného. Za jeden týden je téměř nemožné navštívit všechny skvosty tohoto regionu. Každý den, bez ohledu na počasí, nabízí nové zážitky a možnosti objevování.</p>
+                            <p>V Novém Městě nad Metují se nachází renesanční náměstí a zámek s areálem zámecké zahrady, jejíž dřevěný most, navržený proslulým architektem Dušanem Jurkovičem, byl zařazen mezi top 7 mostů v ČR.</p>
+                            <p>Dušan Jurkovič, známý svým mistrovským rukopisem, navrhl i další unikátní stavby v okolí, jako je restaurace Bartoňova útulna v malebné přírodní rezervaci Peklo, nebo Jiráskovu chatu na Dobrošově, která se nachází v blízkosti vojenských pevností.</p>
+                            <p>V Novém Městě nad Metují je také letiště, kde si lze objednat vyhlídkové lety nebo seskoky padákem.</p>
+                            <p>Nadšenci lezení mohou využít cvičných horolezeckých skal HIS nedaleko náměstí.</p>
+                            <p>Kraj je vhodný pro rodiny s dětmi, neboť je provázaný pohádkovými bytostmi "Kačenčiny pohádkové říše".</p>
+                            <p>Okolí nabízí dobré podmínky pro pěší turistiku i cyklistiku jelikož se nachází v podhůří Orlických hor. O víkendech jezdí cyklobusy, které Vás dovezou do Orlických hor, do polských Stolových hor a mnoho dalších míst.</p>
+                        </div>
+                        <Title variant="secondary">
+                            <h2 className="small-title">Cykloturistika</h2>
+                        </Title>
+                        <div className="info-rules">
+                            <p>Z Privátu Nováč se můžete rozhodnout, zdali zvolit roviny nebo kopce.</p>
+                            <p>Na jedné straně si můžete objet po nových cyklostezkách vodní nádrž Rozkoš a cestou navštívit Českou Skalici a Ratibořice, které jsou spojené s Bobičkou Boženy Němcové.</p>
+                            <p>Na druhé straně můžete vyrazit do kopců přes Pekelské údolí na pohraniční pevnosti z II. světové války (např. Dobrošov, Skutina) nebo až do Orlických hor.</p>
+                            <p>Vydat se můžete také přes Pekelské údolí do Náchoda, kde najdete zámek, pivovar nebo lázně Běloves. </p>
+                            <p>Přívětivá trasa vede také do pevnosti Josef z období Marie Terezie</p>
+                            <p>Cyklotrasy lze naplánovat také do Dobrušky proslavené F. L. Věkem a města Opočna se zámkem a rozsáhlou expozicí. </p>
+                            <p>V sezóně jezdí cyklobusy, které Vás dovezou do Orlických hor, do polských Stolových hor a mnoho dalších míst.</p>
+                        </div>
+                        <Title variant="secondary">
+                            <h2 className="small-title">Koupání</h2>
+                        </Title>
+                        <div className="info-rules">
+                            <p>Kryté bazény s venkovním koupalištěm jsou v Náchodě (10 km), v Dobrušce (9 km) a v Jaroměři (18 km).</p>
+                            <p>Nejbližší aquaparky jsou v Kudowa Zdrój (Polsko, 15 km) a v Hradci Králové (30 km).</p>
+                            <p>Přírodní koupání nabízí koupaliště Broumar v Opočně, přehrada Rozkoš včetně rybaření a windsurfing (4 km) a také koupaliště Bystré v Orlických horách.</p>
+                        </div>
+                           <Title variant="secondary">
+                            <h2 className="small-title">Lyžování</h2>
+                        </Title>
+                        <div className="info-rules">
+                            <p>Ski centrum Deštné v Orlických horách je vzdáleno 22 km a nabízí několik sjezdových a běžeckých tratí.</p>
+                            <p>Další lyžařské vleky se nacházejí v Sedloňově, Olešnici v Orlických horách, Orlické Záhoří nebo lze využít polský lyžařský areál Zieleniec.</p>
+                        </div>
+                                 <Title variant="secondary">
+                            <h2 className="small-title">Další místa v okolí</h2>
+                        </Title>
+                        <div className="info-rules">
+     
+                        </div>
                     </div>
                 </div>
             </main>
