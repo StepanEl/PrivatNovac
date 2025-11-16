@@ -23,7 +23,6 @@
   display: none;
 }
 
-/* Modal */
 .gallery-modal {
   position: fixed;
   inset: 0;
@@ -35,11 +34,13 @@
   --swiper-navigation-top-offset: 50%;
   --swiper-navigation-size: 70px
 }
+
 .gallery-modal-inner {
   width: 90%;
   max-width: 1000px;
   background: transparent;
 }
+
 .modal-swiper img {
   width: 100%;
   height: auto;
@@ -58,6 +59,7 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
 .gallery-modal-close:focus {
   outline: 3px solid #FFEB11;
 }

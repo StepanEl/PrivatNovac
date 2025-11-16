@@ -10,7 +10,6 @@ export default function BackToTop() {
       const nearBottom = window.innerHeight + scrolled >= (document.documentElement.scrollHeight - 100);
       setVisible(scrolled > 300 || nearBottom);
     }
-
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);

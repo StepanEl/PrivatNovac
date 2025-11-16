@@ -76,7 +76,7 @@ export function RoomsSection() {
             </div>
             <Link to='/vybaveni-a-pravidla'><Button text={
                 <>
-                    Vybavení<br />
+                    Vybavení<br/>
                     a pravidla ubytování
                 </>
             } /> </Link>

@@ -59,20 +59,19 @@ export function PricePage() {
                     <p className='childrenBed'>Dítě ve vlastní postýlce zdarma.</p>
                 </div>
                 <div className="element-na-secondary price-container">
-                <div className="element-na-primary ">
-                    <h2 className='small-title'>Cena za ubytování</h2>
-                    <PriceForm />
-                </div>
+                    <div className="element-na-primary ">
+                        <h2 className='small-title'>Cena za ubytování</h2>
+                        <PriceForm />
+                    </div>
                 </div>
                 <div className="element-na-secondary price-page-title">
                     <Title variant="secondary">
                         <h2 className='small-title'>Storno podmínky a zálohy</h2>
                     </Title>
-
                     <div className="info-rules">
                         <ul>
                             <li>Záloha činí cenu 1 noci z ceny kalkulované za rezervovaný pobyt. </li>
-                            <li>Není-li záloha uhrazena do dohodnutého termínu, rezervace zaníka.</li>
+                            <li>Není-li záloha uhrazena do dohodnutého termínu, rezervace zaniká.</li>
                             <li>Doplatek ceny za ubytování je uhrazen při příjezdu na pobyt.</li>
                             <li>V případě storna pobytu více než 20 dní před nástupem vracíme 100 % výše zálohy.</li>
                             <li>V případě storna pobytu méně než 20 dní před nástupem činí poplatek 50 % výše zálohy.</li>
@@ -82,7 +81,6 @@ export function PricePage() {
                     </div>
                 </div>
             </main>
-
             <Footer />
         </div>
     );

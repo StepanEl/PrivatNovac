@@ -49,7 +49,7 @@ export const GridGallery = ({ slides }) => {
         ))}
       </div>
 
-        {/* Modal with Swiper for zoom/navigation */}
+      {/* Modal with Swiper for zoom/navigation */}
       {open && (
         <div className="gallery-modal" onClick={() => setOpen(false)} aria-hidden={open ? 'false' : 'true'}>
           <div className="gallery-modal-inner" onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true" tabIndex={-1} ref={modalRef}>

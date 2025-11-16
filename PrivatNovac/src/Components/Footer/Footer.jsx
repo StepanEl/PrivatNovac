@@ -38,13 +38,10 @@ export function Footer() {
           <p> E-mail: <a href="mailto:hugo.habrman@gmail.com">hugo.habrman@gmail.com</a></p>
         </div>
       </div>
-
       <div className="hero footer-hero">
         <img src={novac} alt="Obrázek města" />
         <p className='footer-copyright'> © 2025 Eliška Štěpánová. Všechna práva vyhrazena.</p>
       </div>
-
-
     </footer>
   )
 }

@@ -10,7 +10,6 @@ import smoking from '../../../public/img/icons/smoking.svg';
 import "./RulesPage.css";
 import { Hero } from "../../Components/Hero/Hero";
 
-
 export function RulesPage() {
     return (
         <div className="container">
@@ -36,10 +35,10 @@ export function RulesPage() {
                                 <li>Vzhledem k tomu, že je celý objekt pokryt koberci, vstup je možný pouze po přezutí. Přezůvky vám rádi zapůjčíme.</li>
                                 <li>V celém domě platí zákaz kouření. Pro kuřáky je vyhrazen prostor pod přístřeškem venkovní kuchyně nebo kdekoliv na zahradě.</li></ul>
                             <div className="icons-rules">
-                                <img src={parking} alt="Ikona parkoviště" />
-                                <img src={pet} alt="Ikona zákazu domácích mazlíčků" />
-                                <img src={slipper} alt="Ikona přezůvek" />
-                                <img src={smoking} alt="Ikona zákazu kouření" />
+                                <div className="icon"><img src={parking} alt="Ikona parkoviště" /></div>
+                                <div className="icon"><img src={pet} alt="Ikona zákazu domácích mazlíčků" /></div>
+                                <div className="icon"><img src={slipper} alt="Ikona přezůvek" /></div>
+                                <div className="icon"><img src={smoking} alt="Ikona zákazu kouření" /></div>
                             </div>
                         </div>
                     </div>
@@ -70,7 +69,6 @@ export function RulesPage() {
                             <br />
                             <Title variant="secondary" column>
                                 <h3 className="small-title">Kuchyňka</h3>
-
                                 <div className="info-rules">
                                     <ul><p>Plně vybavená společná kuchyňka nabízí:</p>
                                         <li>Nádobí, lednici s mrazákem.</li>
@@ -79,7 +77,6 @@ export function RulesPage() {
                                         <li>Snídaně lze připravit pomocí snídaňového setu (kávovar, toustovač).</li>
                                     </ul>
                                 </div>
-
                                 <Gallery slides={[
                                     { image: 'img/kitchen/1.jpg' },
                                     { image: 'img/kitchen/2.jpg' },
@@ -87,6 +84,7 @@ export function RulesPage() {
                                 ]} />
                             </Title>
                         </div>
+
                         <div className="container">
                             <Title variant="secondary" column>
                                 <h3 className="small-title">Zahrada</h3>
@@ -131,7 +129,6 @@ export function RulesPage() {
                                 <div className="info-rules">
                                     <ul><li>Pro cyklisty máme zastřešené, uzamykatelné parkování s možností nabíjení elektrokol.</li>
                                         <li>Nechybí ani základní nářadí na opravy a dofouknutí kol.</li></ul>
-
                                 </div>
                                 <Gallery slides={[
                                     { image: 'img/bicykle/1.jpg' },

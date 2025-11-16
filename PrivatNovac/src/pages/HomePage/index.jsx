@@ -1,3 +1,4 @@
+import './style.css';
 import { Link } from 'react-router';
 import { Helmet } from 'react-helmet-async';
 import { Button } from '../../Components/Button/Button';
@@ -7,8 +8,6 @@ import { Header } from '../../Components/Header/Header';
 import { PriceForm } from '../../Components/PriceForm/PriceForm';
 import { RoomsSection } from '../../Components/RoomSection/RoomSection';
 import { Title } from '../../Components/title/Title';
-
-import './style.css';
 import { Hero } from '../../Components/Hero/Hero';
 
 export function HomePage() {
@@ -69,7 +68,6 @@ export function HomePage() {
         </div>
 
         <div className="desktop-homePage element-na-secondary">
-
           <section className="info-section">
             <div className="info-text right">
               <p>Nabízíme útulné podkrovní pokoje s vlastním sociálním zařízením, masážním sprchovým boxem a společnou kuchyňkou.</p>
@@ -88,7 +86,7 @@ export function HomePage() {
 
           <section className="info-section">
             <div className="info-text right">
-              <p>Pro cyklisty je k dispozici zastřešené na noc uzamykatelné parkování s možností nabíjení elektrokol.</p>
+              <p>Pro cyklisty je k dispozici zastřešené, na noc uzamykatelné parkování s možností nabíjení elektrokol.</p>
               <img src="img/icons/bicycle.svg" alt="Ikona kola" className="info-icon" />
             </div>
             <img src="img/info/3.jpg" alt="Cyklisté" className="info-image" />
@@ -104,24 +102,22 @@ export function HomePage() {
 
           <section className="info-section">
             <div className="info-text right">
-              <p>Po dohodě si můžete večer užít jedinečný zážitek - promítání filmů majitele ubytování, režiséra Hugo Habrmana v útulném domácím letním kině.</p>
+              <p>Po dohodě si můžete večer užít jedinečný zážitek - promítání filmů majitele ubytování, režiséra Hugo Habrmana, v útulném domácím letním kině.</p>
               <img src="img/icons/video-camera.svg" alt="Ikona kamery" className="info-icon" />
             </div>
             <img src="img/info/5.jpg" alt="Letní kino" className="info-image" />
           </section>
         </div>
 
-
-
         <div className="mobile-homePage">
-           <div className="element-na-secondary-intro">
-          <Gallery slides={[
-            { image: 'img/info/1.jpg', text: 'Nabízíme útulné podkrovní pokoje s vlastním sociálním zařízením, masážním sprchovým boxem a společnou kuchyňkou.', icon: 'img/icons/Wifi.svg', iconAlt: 'Ikona WiFi' },
-            { image: 'img/info/2.jpg', text: 'Parkování aut je na oploceném pozemku v těsné blízkosti ubytování.', icon: 'img/icons/Vector.svg', iconAlt: 'Ikona parkoviště' },
-            { image: 'img/info/3.jpg', text: 'Pro cyklisty je k dispozici zastřešené na noc uzamykatelné parkování s možností nabíjení elektrokol.', icon: 'img/icons/bicycle.svg', iconAlt: 'Ikona kola' },
-            { image: 'img/info/4.jpg', text: 'Na zahradě si můžete dopřát odpočinek u bazénu s lehátky, posedět v dřevěném altánu nebo si vychutnat grilování u venkovního krbu.', icon: 'img/icons/swimming.svg', iconAlt: 'Ikona bazénu' },
-            { image: 'img/info/5.jpg', text: 'Po dohodě si můžete večer užít jedinečný zážitek - promítání filmů majitele ubytování, režiséra Hugo Habrmana v útulném domácím letním kině.', icon: 'img/icons/video-camera.svg', iconAlt: 'Ikona kamery' }
-          ]} />
+          <div className="element-na-secondary-intro">
+            <Gallery slides={[
+              { image: 'img/info/1.jpg', text: 'Nabízíme útulné podkrovní pokoje s vlastním sociálním zařízením, masážním sprchovým boxem a společnou kuchyňkou.', icon: 'img/icons/Wifi.svg', iconAlt: 'Ikona WiFi' },
+              { image: 'img/info/2.jpg', text: 'Parkování aut je na oploceném pozemku v těsné blízkosti ubytování.', icon: 'img/icons/Vector.svg', iconAlt: 'Ikona parkoviště' },
+              { image: 'img/info/3.jpg', text: 'Pro cyklisty je k dispozici zastřešené na noc uzamykatelné parkování s možností nabíjení elektrokol.', icon: 'img/icons/bicycle.svg', iconAlt: 'Ikona kola' },
+              { image: 'img/info/4.jpg', text: 'Na zahradě si můžete dopřát odpočinek u bazénu s lehátky, posedět v dřevěném altánu nebo si vychutnat grilování u venkovního krbu.', icon: 'img/icons/swimming.svg', iconAlt: 'Ikona bazénu' },
+              { image: 'img/info/5.jpg', text: 'Po dohodě si můžete večer užít jedinečný zážitek - promítání filmů majitele ubytování, režiséra Hugo Habrmana v útulném domácím letním kině.', icon: 'img/icons/video-camera.svg', iconAlt: 'Ikona kamery' }
+            ]} />
           </div>
           <div id='RoomsSection'>
             <RoomsSection />
@@ -130,7 +126,7 @@ export function HomePage() {
             <Title variant="secondary">
               <h2 className='small-title'>Tipy na výlety</h2>
               <p>Okolí vybízí k turistice, výletům na kolech, windsurfingu na Rozkoši nebo lyžování v nedalekých Orlických horách.</p>
-             <Link to='/tipy-na-vylety'><Button text="Prozkoumat okolí" className="explore-btn" /></Link>
+              <Link to='/tipy-na-vylety'><Button text="Prozkoumat okolí" className="explore-btn" /></Link>
             </Title>
           </div>
 
@@ -138,9 +134,7 @@ export function HomePage() {
             <h2 className='small-title'>Cena za ubytování</h2>
             <PriceForm />
             <p>Dítě ve vlastní postýlce zdarma</p>
-
             <Link to='/cenik'><Button text="Ceník a storno podmínky" className="explore-btn" /></Link>
-
           </div>
 
           <div id='arrival' className="element-na-secondary">

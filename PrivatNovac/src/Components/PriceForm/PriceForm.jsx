@@ -22,7 +22,6 @@ const priceTable = {
   }
 };
 
-
 function getPrice(persons, nights) {
   const validPersons = Number(persons) || 1;
   const validNights = Number(nights) || 1;
@@ -44,7 +43,6 @@ export function PriceForm() {
 
   const price = getPrice(persons, nights);
 
-
   return (
     <>
       <form className="price-form">
@@ -59,14 +57,11 @@ export function PriceForm() {
             value={nights}
             onChange={(e) => {
               let value = e.target.value;
-
               if (value === "") {
                 setNights("");
                 return;
               }
-
               value = value.replace(/^0+/, "") || "0";
-
               setNights(Number(value));
             }}
             onBlur={() => {
@@ -88,12 +83,10 @@ export function PriceForm() {
             value={persons}
             onChange={(e) => {
               let value = e.target.value;
-
               if (value === "") {
                 setPersons("");
                 return;
               }
-
               value = value.replace(/^0+/, "") || "0";
               setPersons(Number(value));
             }}

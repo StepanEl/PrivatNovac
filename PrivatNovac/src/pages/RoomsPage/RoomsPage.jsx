@@ -27,23 +27,23 @@ export function RoomsPage() {
                     </div>
                     <div className="text-content end-block">
                         <p>Všechny pokoje jsou vybaveny vlastním sociálním zařízením
-                            s masážním sprchovým boxem, ručníky, WiFi, LCD televizí a přenosným ventilátorem.
-                            Na patře je k dispozici společná kuchyňka. Ve vstupní místnosti je pro každý pokoj uzamykatelná skříňka na boty.</p>
+                            s masážním sprchovým boxem, ručníky, Wi-Fi, LCD televizí a přenosným ventilátorem.
+                            Na patře je k dispozici společná kuchyňka. Ve vstupní místnosti má každý pokoj uzamykatelnou skříňku na boty.</p>
                     </div>
                 </div>
 
                 {rooms.map((r, idx) => (
                     <div key={r.name} className="element-na-secondary">
                         <div className='element-na-primary block'>
-                        <Title variant="primary">
-                            <h3 className="rooms-title">{r.name}</h3>
-                            <div className="text-content paragraph">
-                                <p>{r.text1}</p>
-                                <p>{r.text2}</p>
-                                <p>{r.text3}</p>
-                            </div>
-                            <GridGallery slides={r.gallery} />
-                        </Title>
+                            <Title variant="primary">
+                                <h3 className="rooms-title">{r.name}</h3>
+                                <div className="text-content paragraph">
+                                    <p>{r.text1}</p>
+                                    <p>{r.text2}</p>
+                                    <p>{r.text3}</p>
+                                </div>
+                                <GridGallery slides={r.gallery} />
+                            </Title>
                         </div>
                     </div>
                 ))}

@@ -75,10 +75,9 @@ export function ShareAreasPage() {
                             ]} />
 
                             <div className="text-content paragraph">
-
                                 <p>Využít můžete také zastřešenou venkovní kuchyň s posezením a domácím kinem.</p>
                                 <p>Kuchyň je vybavena nádobím pro stolování, umyvadlem a WC.</p>
-                                <p>Po dohodě s majitelem ubytování, režisérem Hugo Habrmanem je možné zhlédnout jeho přírodopisné
+                                <p>Po dohodě s majitelem ubytování, režisérem Hugo Habrmanem, je možné zhlédnout jeho přírodopisné
                                     a jiné filmy včetně nejnovější snímků uváděných v kinech.
                                     <a href="https://www.filmyhabrman.com" target="_blank" rel="noopener noreferrer"> www.filmyhabrman.com</a></p>
                             </div>
@@ -91,7 +90,6 @@ export function ShareAreasPage() {
                             ]} />
                         </Title>
                     </div>
-
 
                     <div className="element-na-primary block share">
                         <Title variant="primary">

@@ -11,7 +11,7 @@ export function ContactPage() {
             <Helmet>
                 {(() => {
                     const pageTitle = 'Kontakt — Privát Nováč | Rezervace a adresa';
-                    const pageDescription = 'Kontaktujte Privát Nováč — telefon, e-mail a přesná adresa v Novém Městě nad Metují. Rezervace a dotazy rychle vyřídíme.';
+                    const pageDescription = 'Kontaktujte Privát Nováč — telefon, e-mail a adresa v Novém Městě nad Metují. Rezervace a dotazy rychle vyřídíme.';
                     const origin = typeof window !== 'undefined' && window.location ? window.location.origin : 'https://your-domain.example';
                     const pageUrl = origin + '/PrivatNovac/kontakt';
                     const ogImage = origin + '/PrivatNovac/img/novac1.png';
@@ -48,6 +48,7 @@ export function ContactPage() {
                     );
                 })()}
             </Helmet>
+
             <Header />
             <div className="element-na-secondary">
                 <Title variant="secondary">
@@ -72,19 +73,18 @@ export function ContactPage() {
                         IČO: 60895284</p>
                 </div>
 
-                    <Title variant="secondary-small">
-                        <h2 className='small-title'>Kudy k nám</h2>
-                        </Title>
-                        <div className="contact-text arrival">
-                            <p>V Zátiší<br />
-                                549 01 Nové Město nad Metují<br />
-                                GPS: 50.327785, 16.164823</p>
-                            <GridGallery slides={[
-                                { image: 'img/arrival/photomap.webp' },
-                                { image: 'img/arrival/map.webp' },
-                            ]} />
-                        </div>
-                    
+                <Title variant="secondary-small">
+                    <h2 className='small-title'>Kudy k nám</h2>
+                </Title>
+                <div className="contact-text arrival">
+                    <p>V Zátiší<br />
+                        549 01 Nové Město nad Metují<br />
+                        GPS: 50.327785, 16.164823</p>
+                    <GridGallery slides={[
+                        { image: 'img/arrival/photomap.webp' },
+                        { image: 'img/arrival/map.webp' },
+                    ]} />
+                </div>
             </div>
             <Footer />
         </div>

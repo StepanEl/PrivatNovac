@@ -5,8 +5,6 @@ import { Hero } from "../../Components/Hero/Hero";
 import { Gallery } from "../../Components/Gallery/Gallery";
 import { Footer } from "../../Components/Footer/Footer";
 
-
-
 export function TipsPage() {
     return (
         <div className="container">
@@ -18,7 +16,6 @@ export function TipsPage() {
             <div className="mobile-rules">
                 <Hero />
             </div>
-
             <main>
                 <div className="element-na-secondary">
                     <div className="desktop-rules">
@@ -26,7 +23,6 @@ export function TipsPage() {
                             <h2 className="small-title">Tipy na výlety</h2>
                         </Title>
                         <div className="info-rules">
-
                             <p>Nové Město nad Metují a jeho okolí je plné historických památek a přírodních krás. Každý kout skrývá něco jedinečného. Za jeden týden je téměř nemožné navštívit všechny skvosty tohoto regionu. Každý den, bez ohledu na počasí, nabízí nové zážitky a možnosti objevování.</p>
                             <p>V Novém Městě nad Metují se nachází renesanční náměstí a zámek s areálem zámecké zahrady, jejíž dřevěný most, navržený proslulým architektem Dušanem Jurkovičem, byl zařazen mezi top 7 mostů v ČR.</p>
                             <p>Dušan Jurkovič, známý svým mistrovským rukopisem, navrhl i další unikátní stavby v okolí, jako je restaurace Bartoňova útulna v malebné přírodní rezervaci Peklo nebo Jiráskova chata na Dobrošově, která se nachází v blízkosti vojenských pevností.</p>
@@ -46,8 +42,6 @@ export function TipsPage() {
                             { image: 'img/tips/slavonov.webp', text: 'Slavoňov, dřevěný kostel - památka UNESCO (6 km)' },
                             { image: 'img/tips/rokole1.webp', text: 'Marianské poutní místo Rokole (8 km)' },
                             { image: 'img/tips/kacencina-rise.webp', text: 'V rámci "Kačenčiny pohádkové říše" můžete hledat trasy vhodné pro děti.' },
-
-
                         ]} />
                         <Title variant="secondary">
                             <h2 className="small-title">Cykloturistika</h2>
@@ -73,10 +67,9 @@ export function TipsPage() {
                             { image: 'img/tips/kuks.webp', text: 'Hospital Kuks (30 km)' },
                             { image: 'img/tips/dobruska.webp', text: 'Dobruška, město F.L. Věka, koupaliště a krytý bazén (10 km)' },
                             { image: 'img/tips/opocno2.webp', text: 'Státní zámek Opočno z 15. století s rozsáhlou expozicí (15 km)' },
-                            { image: 'img/tips/destna.webp', text: 'Rozhlednana nejvyšším vrcholu Orlických hor - Velká Deštná (35 km)' },
+                            { image: 'img/tips/destna.webp', text: 'Rozhledna na nejvyšším vrcholu Orlických hor - Velká Deštná (35 km)' },
                             { image: 'img/tips/stolove-hory.webp', text: 'Národní Park Stolových hor, Polsko (32 km)' },
                             { image: 'img/tips/kudowa.webp', text: 'Kudowa Zdrój lázeňské město, Polská republika (20 km)' },
-
                         ]} />
                         <Title variant="secondary">
                             <h2 className="small-title">Koupání</h2>
@@ -84,42 +77,37 @@ export function TipsPage() {
                         <div className="info-rules">
                             <p>Kryté bazény s venkovním koupalištěm jsou v Náchodě (10 km), v Dobrušce (9 km) a v Jaroměři (18 km).</p>
                             <p>Nejbližší aquaparky jsou v Kudowa Zdrój (Polsko, 15 km) a v Hradci Králové (30 km).</p>
-                            <p>Přírodní koupání nabízí koupaliště Broumar v Opočně, přehrada Rozkoš včetně rybaření a windsurfing (4 km) a také koupaliště Bystré v Orlických horách.</p>
+                            <p>Přírodní koupání nabízí koupaliště Broumar v Opočně (13 km), přehrada Rozkoš včetně rybaření a windsurfing (5 km) a také koupaliště Bystré v Orlických horách (12 km).</p>
                         </div>
                         <Gallery slides={[
                             { image: 'img/tips/broumar.webp', text: 'Koupaliště Broumar' },
-
                         ]} />
                         <Title variant="secondary">
                             <h2 className="small-title">Lyžování</h2>
                         </Title>
                         <div className="info-rules">
                             <p>Ski centrum Deštné v Orlických horách je vzdáleno 22 km a nabízí několik sjezdových a běžeckých tratí.</p>
-                            <p>Další lyžařské vleky se nacházejí v Sedloňově, Olešnici v Orlických horách, Orlické Záhoří nebo lze využít polský lyžařský areál Zieleniec.</p>
+                            <p>Další lyžařské vleky se nacházejí v Sedloňově (16 km), Olešnici v Orlických horách (17 km), Orlickém Záhoří (34 km) nebo lze využít polský lyžařský areál Zieleniec (27 km).</p>
                         </div>
                         <Gallery slides={[
                             { image: 'img/tips/destne.webp', text: 'Deštné v Orlický horách' },
-
                         ]} />
                         <Title variant="secondary">
                             <h2 className="small-title">Další místa v okolí</h2>
                         </Title>
                         <div className="info-rules">
-
                         </div>
                         <Gallery slides={[
                             { image: 'img/tips/family-park.webp', text: 'Family park Česká Skalice - ZOO (12 km)' },
-                            { image: 'img/tips/kostnice.webp', text: 'Polská Czermna kostnice na území Polské republiky (20 km)' },
-                            { image: 'img/tips/hronov.webp', text: 'Hronov rodiště spisovatele A. Jiráska, festival "Jiráskův Hronov" (22 km)' },
+                            { image: 'img/tips/kostnice.webp', text: 'Kostnice v Polské Czermné (20 km)' },
+                            { image: 'img/tips/hronov.webp', text: 'Hronov - rodiště spisovatele Aloise Jiráska (22 km)' },
                             { image: 'img/tips/merkur.webp', text: 'Muzeum stavebnice Merkur, Police nad Metují (26 km)' },
-                            { image: 'img/tips/braunuv-betlem.webp', text: 'Sochařská rezervace Braunův Betlém (30km)' },
-                            { image: 'img/tips/zoo-dvur.webp', text: 'Safari park Dvůr Králové nad Labem -ZOO (32 km)' },
+                            { image: 'img/tips/braunuv-betlem.webp', text: 'Sochařská rezervace Braunův Betlém, u Kuksu (30 km)' },
+                            { image: 'img/tips/zoo-dvur.webp', text: 'Safari park Dvůr Králové nad Labem - ZOO (32 km)' },
                             { image: 'img/tips/aquarium.webp', text: 'Obří akvárium v Hradci Králové (32 km)' },
                             { image: 'img/tips/ostas.webp', text: 'Skalní město Ostaš na Broumovsku (30 km)' },
                             { image: 'img/tips/adrspach.webp', text: 'Teplicko-Adršpašské skály, skalní město (42 km)' },
                         ]} />
-
-
                     </div>
                 </div>
             </main>
